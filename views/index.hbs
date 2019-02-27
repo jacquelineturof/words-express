@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>WORDS API</title>
+        <link rel = "stylesheet" href = "/css/index.css">
+        <link rel = "stylesheet" href = "/css/hover-min.css" media = "all">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <h1>Words API UI</h1>
+            <p id = "tagline">I have the best words.</p>
+        </header>
+        <div id = "errors">
+
+        </div>
+        <form>
+            <!-- Choose what we're looking for a word
+                 WORDS API has many more options we can add to this -->
+            <select>
+                <option value = "definitions">Definitions</option>
+                <option value = "synonyms">Synonyms</option>
+                <option value = "antonyms">Antonyms</option>
+                <option value = "rhymes">Rhymes</option>
+                <option value = "">Rhymes</option>
+            </select>
+            <!-- The word we're looking up -->
+            <input type = "text">
+            <div class = "button-container">
+                    <!-- The http request tech to use to make the api call -->
+                    <button class = "button hvr-float-shadow" 
+                            id = "xhr"
+                            type = "button">XHR</button>
+                    <button class = "button hvr-float-shadow" 
+                            id = "fetch"
+                            type = "button">FETCH</button>
+                    <button class = "button hvr-float-shadow" 
+                            id = "jquery"
+                            type = "button">jQuery</button>
+                    <button class = "button hvr-float-shadow" 
+                            id = "axios"
+                            type = "button">AXIOS</button>
+                </div>
+        </form>
+        <td></td>
+        <div class = "results">
+
+        </div>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+      <script src = "/js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+ body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #CAF7E2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #386150;
+    color: white;
+    font-family: 'Cinzel', serif;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    transform: translateY(40px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    margin-top: 100px;
+}
+
+select {
+    width: 40%;
+    position: relative;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    margin-bottom: 40px;
+}
+
+input { 
+    width: 40%;
+    margin-top: 40px;
+}
+
+.button-container {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #3D3522;
+    padding: 15px 32px;
+    color: white;
+    width: 20%;
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+}
+
+.button:active, .button:focus {
+    outline: none;
+    border: none;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    font-family: 'Crimson Text', serif;
+    background-color: #58B09C;
+    margin-top: 40px;
+}
+
+.errors {
+    background-color: #f70c3f;
+    font-family: 'Crimson Text', serif;
+    margin: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 50%;
+    color: black;
+}
+
+i {
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .button {
+        margin: 10px;
+        width: 40%;
+        font-size: 12px;
+    }
+
+    header {
+        height: 150px;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+    }
+
+    #tagline {
+        display: none;
+    }
+}
